@@ -18,7 +18,12 @@ A list of important security checks for GitHub individual and organization accou
 
 ## Organization settings
 
-TODO
+- [ ] **Organization admins must restrict Third-party application access**: Without this setting, all applications authorized by organization members have access to the organization’s data, potentially allowing rogue applications access to organization data such as private repos.<br>Organization settings → Third-party application access
+- [ ] **Organization admins must require 2FA for members**<br>Organization settings → Security → Two-factor authentication
+- [ ] **Restrict membership to least-privilege**: Membership in the organization is organized by teams. Team members of projects are given the least privileges to specific repositories that they require. Write access to repositories should be restricted where possible.<br>People / Team settings
+- [ ] **Organization admins must remove unwanted users**: Admins should regularly audit membership lists to make sure permissions are appropriate, and unwanted members are removed. Timely revocation of access to the organization should be part of the organization’s exit process for contributors.<br>People / Team settings
+- [ ] _Organization admins should restrict default member privileges_: Admins can set member privileges to create, delete, fork, and modify organization repositories; these privileges should be restricted to administrators. The default repository permission for users should be set to “None.”<br>Organization settings → Member privileges
+- [ ] _Organization admins should audit webhooks_: Admins should review the list of organization webhooks for suspicious signs of exfiltration.<br>Organization settings → Webhooks
 
 ## About this doc
 
